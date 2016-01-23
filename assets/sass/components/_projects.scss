@@ -1,0 +1,29 @@
+.Projects
+{
+	display: flex; 
+	flex-direction: column; 
+
+	a {
+		color: #aaa; 
+		font-size: 25px;
+		font-weight: 200; 
+		display: inline-block;
+		border-bottom: 1px dashed #aaa; 
+	}
+	
+	a:hover {
+		color: deepskyblue;
+		border-color: deepskyblue;
+	}
+
+	&-img-wrapper {
+		display: flex; 
+	}
+
+	&-img {
+		height: 150px; 
+		margin: 10px 5px; 
+		border: 1px solid black; 
+		border-radius: 10px; 
+	}
+}

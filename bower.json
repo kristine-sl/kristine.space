@@ -1,0 +1,22 @@
+{
+  "name": "kristine.space",
+  "version": "0.0.0",
+  "authors": [
+    "Kristine Sundt Lorentzen <kristine.sundt.lorentzen@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "parallax": "~2.1.3"
+  }
+}

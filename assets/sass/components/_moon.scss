@@ -1,0 +1,31 @@
+.Moon {
+	width: 400px; 
+	height: 400px; 
+	border-radius: 50%; 
+	overflow: hidden; 
+	background: map-get( $colors, 'moon' ); 
+	position: absolute; 
+
+	animation: rotateMoon 240s linear infinite; 
+
+    @keyframes rotateMoon {
+        50% {
+            transform: rotate( 180deg );
+        }
+		100% {
+			transform: rotate( 360deg ); 
+		}
+    }
+
+	&-wrapper {
+		position: absolute; 
+		left: -150px; 
+		top: -150px; 
+	}
+
+	&-crater {
+		position: absolute; 
+		border-radius: 50%; 
+		background: mix( map-get( $colors, 'moon' ), map-get( $colors, 'sky-dark' ), 80% ); 
+	}
+}

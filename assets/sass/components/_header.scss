@@ -1,0 +1,13 @@
+.Header {
+	// width: map-get( $layout, 'header-width'); 
+	width: 100%; 
+	height: 100%; 
+	display: flex !important; 
+	flex-direction: column; 
+	align-items: center; 
+	justify-content: center; 
+	padding: 20px; 
+	background: linear-gradient( map-get( $colors, 'sky-dark' ), map-get( $colors, 'sky-medium' ), map-get( $colors, 'sky-light' ) );
+	color: white; 
+	position: relative; 
+}

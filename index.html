@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang = 'no' ng-app = 'app'>
+    <head>
+        <meta charset = 'utf-8'>
+        <title>Kristine's space</title>
+        <meta name = 'description' content = ''>
+        <meta name = 'viewport' content = 'width=device-width, initial-scale=1'>
+
+        <link href='https://fonts.googleapis.com/css?family=Satisfy|Alex+Brush|Neucha|Patrick+Hand+SC' rel='stylesheet' type='text/css'>
+        <link href="https://file.myfontastic.com/VwYmrYRhhdDVT3kHneFXAd/icons.css" rel="stylesheet">
+        <link rel = 'stylesheet' href = 'https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css'>
+        <link rel = 'stylesheet' href = 'assets/css/main.css'>
+    </head>
+    <body ng-controller = 'SpaceController as space'>
+
+        <!--div class="Palette">
+            <div class='Color Color--a'></div>
+            <div class='Color Color--b'></div>
+            <div class='Color Color--c'></div>
+            <div class='Color Color--d'></div>
+            <div class='Color Color--e'></div>
+            <div class='Color Color--f'></div>
+            <div class='Color Color--g'></div>
+            <div class='Color Color--h'></div>
+            <div class='Color Color--i'></div>
+        </div-->
+
+        <div class = 'Header'>
+
+            <div class="Star-wrapper">
+                <div class="Star" ng-repeat = 'star in space.stars track by $index' ng-class = "{ 'Star--active': star.active }" ng-style = "{ 'height': star.size + 'px', 'width': star.size + 'px', 'top': star.top + '%', 'left': star.left + '%' }"></div>
+            </div>
+
+            <div class="Moon-wrapper">
+                <div class="Moon">
+                    <div class="Moon-crater" ng-repeat = 'crater in space.craters track by $index' ng-style = "{ 'height': crater.size + 'px', 'width': crater.size + 'px', 'top': crater.top + '%', 'left': crater.left + '%' }"></div>
+                </div>
+            </div>
+
+            <div class="Logo layer" data-depth = '0.5'>
+                <div class="Logo-main">Kristine's</div>
+                <div class="Logo-sub">space</div>
+            </div>
+
+            <div class="Parallax-wrapper">
+                <div class="layer" data-depth = '0.3'>
+                    <div class="Parallax-element">
+                        <div class="icon-github-square"></div>
+                        <div class="icon-linkedin-square"></div>
+                    </div>
+                </div>
+                <div class="layer" data-depth = '0.4'>
+                    <div class="Parallax-element"></div>
+                </div>
+                <div class="layer" data-depth = '0.5'>
+                    <div class="Parallax-element"></div>
+                </div>
+            </div>
+        </div>
+
+        <!--main>
+            <div class = 'Projects'>
+                <div class="Projects-lego Projects-item">
+                    <h3>Practical use of Scrum (in Norwegian) and planning poker</h3>
+                    <div class="Projects-description">Lorem ipsum.</div>
+                    <div class="Projects-img-wrapper">
+                        <img src="assets/img/scrum.png" alt="Praktisk bruk av Scrum: Lego" class = "Projects-img">
+                        <img src="assets/img/poker.png" alt="Planning poker" class = "Projects-img">
+                    </div>
+                </div>
+                <div class="Projects-atm Projects-item">
+                    <h3>ATM</h3>
+                    <div class="Projects-description">Lorem ipsum</div>
+                    <img src="assets/img/atm.png" alt="ATM" class = "Projects-img">
+                </div>
+            </div>
+        </main-->
+        <script src = 'bower_components/parallax/deploy/parallax.js'></script>
+        <script src = 'https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.js'></script>
+        <script src = 'assets/js/app.js'></script>
+    </body>
+</html>

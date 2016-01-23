@@ -1,0 +1,42 @@
+.Color {
+	width: 25px; 
+	height: 25px; 
+	background: black; 
+	margin: 2px; 
+
+	&--a{
+		background: map-get( $colors, 'a' ); 
+	}
+
+	&--b{	
+		background: map-get( $colors, 'b' ); 
+	}
+
+	&--c{
+		background: map-get( $colors, 'c' ); 
+	}
+
+	&--d{
+		background: map-get( $colors, 'd' ); 
+	}
+
+	&--e{
+		background: map-get( $colors, 'e' ); 
+	}
+
+	&--f{
+		background: map-get( $colors, 'f' ); 
+	}
+
+	&--g{
+		background: map-get( $colors, 'g' ); 
+	}
+
+	&--h{
+		background: map-get( $colors, 'h' ); 
+	}
+
+	&--i{
+		background: map-get( $colors, 'i' ); 
+	}
+}
