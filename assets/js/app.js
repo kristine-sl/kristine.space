@@ -1,4 +1,4 @@
-angular.module( 'app', [] )
+ angular.module( 'app', [] )
 
 	.controller( 'SpaceController', function( $log, $interval, $timeout, $window, $document, $element ) {
 

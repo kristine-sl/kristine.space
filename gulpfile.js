@@ -5,10 +5,10 @@ var debug = require( 'gulp-debug' );
 var browserSync = require('browser-sync').create();
 
 gulp.task( 'sass', function() {
-	return gulp.src( 'assets/sass/main.scss' )
+    return gulp.src( 'assets/sass/main.scss' )
         .pipe( plumber() )
-		.pipe( sass() )
-		.pipe( gulp.dest( 'assets/css/' ) );
+        .pipe( sass() )
+        .pipe( gulp.dest( 'assets/css/' ) );
 } );
 
 gulp.task('watch', function() {
